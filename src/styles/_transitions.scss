@@ -1,0 +1,44 @@
+//upshow
+.upshow-enter-from,
+.upshow-leave-to{
+    opacity: 0;
+    transform: translateY(3rem);
+}
+
+.upshow-enter-to,
+.upshow-leave-from{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.upshow-enter-active,
+.upshow-leave-active{
+    transition:all .4s cubic-bezier(0.18,0.89,0.32,1.27);
+}
+
+.upshow-leave-active{
+    position:absolute;
+}
+
+
+//downshow for input component
+.downshow-enter-from,
+.downshow-leave-to{
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.downshow-enter-to,
+.downshow-leave-from{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.downshow-enter-active,
+.downshow-leave-active{
+    transition:all .28s ease;
+}
+
+.downshow-leave-active{
+    position:absolute;
+}
